@@ -84,9 +84,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 /* hero */
 .hero{padding:30px 0 52px}
-.hero-tag{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:20px}
-.hero-tag .for{display:inline-flex;align-items:center;min-height:32px;padding:0 14px;background:var(--grad);color:#FFFFFF;font-size:15px;font-weight:700;letter-spacing:.08em}
-.hero-tag .what{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:800;font-size:20px;letter-spacing:.06em;color:var(--ink)}
+.hero-tag{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.hero-tag .for{display:inline-flex;align-items:center;min-height:30px;padding:0 11px;background:var(--grad);color:#FFFFFF;font-size:14px;font-weight:700;letter-spacing:.06em}
+.hero-tag .what{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:800;font-size:clamp(16px,4.8vw,20px);letter-spacing:.02em;color:var(--ink);white-space:nowrap}
 .nfc-note{font-size:13.5px;line-height:1.75;color:var(--sub);margin:6px 0 0}
 .dest{position:relative;display:inline-block;font-weight:700;font-size:16.5px;color:var(--ink);padding:0 .06em;z-index:0}
 .dest::after{content:"";position:absolute;left:0;right:0;bottom:.12em;height:.42em;z-index:-1;
@@ -208,7 +208,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 <section class="hero">
   <div class="wrap">
-    <div class="hero-tag"><span class="for">美容室向け</span><span class="what">瞬間共有NFCカード</span></div>
+    <div class="hero-tag"><span class="for">美容室向け</span><span class="what">瞬間コネクトNFCカード</span></div>
     <h1>再来率<span class="up">UP</span>は、<br>かざした瞬間から<br>はじまる。</h1>
     <p>施術のあと、お客様のスマホにかざすだけ。<br>あなたの<span class="dest" style="--i:0">Instagram</span>も、<br><span class="dest" style="--i:1">ホットペッパービューティー</span>も、<br><span class="dest" style="--i:2">公式LINE</span>も、<span class="dest" style="--i:3">自社サイト</span>も、<br>すべてその場でつながります。</p>
     <p class="nfc-note">※NFCとは、SuicaやPASMOにも使われている「かざすだけで読み取れる」技術です。<br>お客様側にアプリは必要ありません。</p>
