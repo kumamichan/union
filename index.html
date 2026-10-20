@@ -166,6 +166,14 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .plan.dark .note{color:var(--on-night-sub)}
 
 /* faq */
+.yt{display:block;position:relative;aspect-ratio:16/9;margin:6px 0 10px;text-decoration:none;color:#FFFFFF;overflow:hidden;border:1px solid var(--night-line);
+  background:radial-gradient(circle at 78% 22%,rgba(239,90,95,.45),transparent 50%),radial-gradient(circle at 18% 82%,rgba(74,111,199,.55),transparent 55%),radial-gradient(circle at 50% 50%,rgba(154,106,160,.35),transparent 60%),#1A1A1E}
+.yt .play{position:absolute;left:50%;top:46%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.yt .play::after{content:"";margin-left:6px;border-left:20px solid #121212;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.yt:hover .play,.yt:focus-visible .play{transform:scale(1.07)}
+.yt .cap{position:absolute;left:16px;right:16px;bottom:14px;font-size:15px;font-weight:700;line-height:1.5}
+.yt .cap small{display:block;font-family:Jost,sans-serif;font-size:11px;font-weight:500;letter-spacing:.3em;color:#D9D9D9}
+.sec.night .yt-note{font-size:12px;color:#9A9A9A;margin:0;text-align:center}
 .faq{margin:0;border-top:1px solid var(--line)}
 .faq div{padding:16px 0;border-bottom:1px solid var(--line)}
 .faq dt{font-weight:700;line-height:1.6}
@@ -350,6 +358,19 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
       <div class="note">サロンロゴ印刷・全スタッフの初期設定代行つき</div>
       <a class="btn btn-white" href="#contact">見積りを相談する</a>
     </div>
+  </div>
+</section>
+
+<section class="sec night" id="setup">
+  <div class="wrap">
+    <div class="label"><span class="grad-text">SETUP</span></div>
+    <h2 class="h2"><span class="mk">届いたら、<br>動画を見ながら<br>設定するだけ。</span></h2>
+    <p>はじめてでも迷わないように、初期設定の手順を動画にまとめています。</p>
+    <a class="yt" href="https://youtu.be/gBqdKAETnDQ" target="_blank" rel="noopener" aria-label="ユニオンカードの初期設定動画をYouTubeで見る">
+      <span class="play"></span>
+      <span class="cap"><small>HOW TO SET UP</small>ユニオンカードの初期設定動画</span>
+    </a>
+    <p class="yt-note">タップするとYouTubeで再生されます</p>
   </div>
 </section>
 
